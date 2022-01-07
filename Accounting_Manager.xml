@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Accounting>
+   <Manager>
+      <id>20221</id>
+      <name>Chandu</name>
+      <mobileno>9986544958</mobileno>
+      <branch>Electronic City</branch>
+      <accno>751473438</accno>
+      <bankname>Indian Bank</bankname>
+      <salary>85000</salary>
+      <status>Credited</status>
+   </Manager>
+   <Manager>
+    <id>20222</id>
+    <name>Vijay</name>
+    <mobileno>8073021973</mobileno>
+    <branch>Yelhanka</branch>
+    <accno>251478936</accno>
+    <bankname>Mysore Bank</bankname>
+    <salary>80000</salary>
+    <status>Pending</status>
+   </Manager>
+   <Manager>
+    <id>20223</id>
+    <name>Shalini</name>
+    <mobileno>9845228984</mobileno>
+    <branch>HSR</branch>
+    <accno>89654123715</accno>
+    <bankname>South Indian Bank</bankname>
+    <salary>82500</salary>
+    <status>Credited</status>
+   </Manager>
+   <Manager>
+    <id>20224</id>
+    <name>Diya</name>
+    <mobileno>9739055117</mobileno>
+    <branch>Marathahalli</branch>
+    <accno>32145678809</accno>
+    <bankname>Karnataka Bank</bankname>
+    <salary>100000</salary>
+    <status>Credited</status>
+   </Manager>
+   <Manager>
+    <id>20225</id>
+    <name>Shwetha</name>
+    <mobileno>9886373050</mobileno>
+    <branch>BTM</branch>
+    <accno>654321897</accno>
+    <bankname>Indian Overseas Bank</bankname>
+    <salary>75000</salary>
+    <status>Pending</status>
+   </Manager>
+</Accounting>

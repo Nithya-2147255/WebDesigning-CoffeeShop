@@ -1,0 +1,29 @@
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Accounting">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Manager" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:short" name="id"/>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="xs:long" name="mobileno"/>
+            <xs:element type="xs:string" name="branch"/>
+            <xs:element type="xs:long" name="accno"/>
+            <xs:element type="xs:string" name="bankname"/>
+            <xs:element type="ValidSalary" name="salary"/>
+            <xs:element type="xs:string" name="status"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+  <xs:simpleType name="ValidSalary">
+    <xs:restriction base="xs:integer">
+    <xs:minInclusive value="5000"></xs:minInclusive>
+    <xs:maxInclusive value="200000"></xs:maxInclusive>
+    </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
