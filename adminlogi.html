@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COFFEE HOUSE MANAGEMENT</title>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("img/carousel-1.jpg");
+  width: auto;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  width: 30%;
+  padding: 0 35px;
+  top: 50%;
+  left: 12%;
+  transform: translate3d(0, -50%, 35px) perspective(100px);
+  z-index: 20;
+  display: block;
+  opacity: 2;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #ffeba7;
+  color: rgb(12, 10, 10);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+
+</head>
+<body>
+
+<div class="bg-img">
+  <form action="adminpage.html" class="container">
+   
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+ 
+    <input type="password" id="psw" placeholder="Password" required><valid style="font-size: 15px;"></valid><br><br><br>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+<script>
+  var memail=document.getElementById('useremail');
+  var mpassword=document.getElementById('psw');
+var pvalid=document.getElementsByTagName('valid');
+
+function validation()
+{
+if (memail.value==""){
+        memail.style.border="solid 2px red";
+        return false;
+    }
+    if (mpassword.value==""){
+        mpassword.style.border="solid 2px red";
+        return false;
+    }
+
+
+}
+ 
+memail.onkeydown=function()
+{
+//    const validemail=/^([a-z0-9\.-]+)@([a-z0-9]+)\.([a-z]{1,3})$/;
+   const validemail=/^([a-z0-9\.-]+)@(christuniversity)\.([a-z]{1,3})$/;
+  
+   if(validemail.test(memail.value))
+   {
+    memail.style.border="solid 1px white"; 
+   }
+   else{
+    memail.style.border="solid 2px red";
+   }
+}
+
+mpassword.onkeyup=function(){
+    const validpsw=/^(?=.\d)(?=.[a-z])(?=.[@$!%?&])(?=.*[A-Z]).{8,}$/;
+    if(validpsw.test(mpassword.value))
+   {
+    pvalid[0].style.display="none"; 
+    mpassword.style.border="solid 1px white"; 
+   }
+   else{
+    mpassword.style.border="solid 2px red";
+    var upperCaseLetters = /[A-Z]/g;
+    if(mpassword.value.match(upperCaseLetters)) {
+        // pvalid[0].style.display="none";  
+      
+    } else {
+        pvalid[0].innerText="Aleast 1 UpperCase";
+        pvalid[0].style.color="red";
+       
+    }
+
+    var lowerCaseLetters = /[a-z]/g;
+    if(mpassword.value.match(lowerCaseLetters)) {
+        // pvalid[0].style.display="none";  
+      
+    } else {
+        pvalid[0].innerText="Aleast 1 lowerCase";
+        pvalid[0].style.color="red";
+       
+    }
+    
+
+    var numbers = /[0-9]/g;
+    if(mpassword.value.match(numbers)) {  
+        // pvalid[0].style.display="none";
+    } else {
+        pvalid[0].innerText="Aleast 1 Digit";
+        pvalid[0].style.color="red";
+    }
+
+    var numbers = /[@$!%*?&]/g;
+    if(mpassword.value.match(numbers)) {  
+        // pvalid[0].style.display="none";
+    } else {
+        pvalid[0].innerText="Aleast 1 Special character";
+        pvalid[0].style.color="red";
+    }
+
+    
+    if(mpassword.value.length>=8) {  
+        // pvalid[0].style.display="none";
+    } else {
+        pvalid[0].innerText="Minimum 8 characters";
+        pvalid[0].style.color="red";
+    }
+
+
+   }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ttms_ae.xsl" type="text/xsl"?>
+<empbankdetails>
+   <employee>
+      <id>h101</id>
+      <name>vikram</name>
+      <designation>manager</designation>
+      <location>hsr</location>
+      <price>75000</price>
+      <number>751473438</number>
+      <bank>indian bank</bank>
+      <status>pending</status>
+   </employee>
+
+   <employee>
+      <id>Y251</id>
+      <name>anitha</name>
+      <designation>counter check</designation>
+      <location>yelhanka</location>
+      <price>23000</price>
+      <number>123456789</number>
+      <bank>south indian bank</bank>
+      <status>pending</status>
+   </employee>
+
+   <employee>
+      <id>h136</id>
+      <name>diya</name>
+      <designation>manager</designation>
+      <location>hsr</location>
+      <price>80000</price>
+      <number>6512356564</number>
+      <bank>karnataka bank</bank>
+      <status>credited</status>
+   </employee>
+
+   <employee>
+      <id>m331</id>
+      <name>ganesh</name>
+      <designation>security</designation>
+      <location>marathahalli</location>
+      <price>18000</price>
+      <number>96325874155</number>
+      <bank>icici bank</bank>
+      <status>credited</status>
+   </employee>
+
+</empbankdetails>
